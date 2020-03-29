@@ -1,6 +1,8 @@
 # Reader-Writer-Problem-multi-threaded-C-program
 Name : 	      Pradeep Suthar
+
 Student ID :      11815262
+
 Email Address : sutharp777@gmail.com
 
 Used concepts
