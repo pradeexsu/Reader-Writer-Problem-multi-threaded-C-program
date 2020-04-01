@@ -21,8 +21,6 @@ Writers must print:
 Before a reader/writer attempts to access the shared variable it should wait some random amount of time. 
 Note: This will help ensure that reads and writes do not occur all at once  
 # Output :
-< img src = "https://ibb.co/8cDXTpR" >
-
-< img src = "https://ibb.co/bmB9dzK" >
-
-< img src = "https://ibb.co/W5gYWWt" >
+![](https://github.com/sutharp777/Reader-Writer-Problem-multi-threaded-C-program/blob/master/output1.png)
+![](https://github.com/sutharp777/Reader-Writer-Problem-multi-threaded-C-program/blob/master/output2.png)
+![](https://github.com/sutharp777/Reader-Writer-Problem-multi-threaded-C-program/blob/master/output3.png)
