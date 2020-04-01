@@ -1,3 +1,11 @@
+/*
+	Name    : Pradeep Suthar
+	Reg no. : 11815262
+	email id: sutharp777@gmail.com
+	subject : Operating System
+	Mentor  : Dr. Baljit Saini
+	Topic   : Reader Writer Problem and synchronization using pthread (mutex, condition variable)
+*/
 #include "stdio.h"
 #include "string.h"
 #include "stdlib.h"
