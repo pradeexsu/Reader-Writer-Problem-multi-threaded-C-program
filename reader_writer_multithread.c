@@ -57,14 +57,15 @@ void *read_func(void *args)
     pthread_mutex_lock( &mutex);
         reader_counter--;
         if (reader_counter==0){
-            pthread_mutex_unlock(&writer_mutex);
+            pthread_mutex_unlock( &writer_mutex);
             // pthread_cond_signal(&writer_cond);
         }
 
-    pthread_mutex_unlock(&mutex);
+    pthread_mutex_unlock( &mutex);
 }
 
-void *write_func(void *args){
+void *write_func(void *args)
+{
     int thread_no = *(int*)args;
     sleep(rand()%5);
        pthread_mutex_lock(&writer_mutex);
