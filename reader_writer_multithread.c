@@ -47,8 +47,8 @@ void *read_func(void *args)
         
     pthread_mutex_unlock( &mutex);
     sleep( rand()%5);
-        printf("Reader Thread Number : %d\n",thread_no);
-        printf("Number of Thread in Critical Section (includeing self) : %d \n", reader_counter+writer_counter);
+        printf("Reader Thread Number : %d\n", thread_no);
+        printf("Number of Thread in Critical Section (includeing self) : %d \n", reader_counter + writer_counter);
         for(int i=0;i<x;i++)    // reading global variable x times 
             printf("Reader Thread %d Readed xyz (global variable) is %d\n", thread_no, xyz);  
             printf("global variable struct var readed { %s, %d }\n", global_var.str, global_var.num);
