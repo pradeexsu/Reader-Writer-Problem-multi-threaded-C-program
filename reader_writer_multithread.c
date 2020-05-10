@@ -49,14 +49,16 @@ void *read_func(void *args)
     sleep( rand()%5);
         printf("Reader Thread Number : %d\n", thread_no);
         printf("Number of Thread in Critical Section (includeing self) : %d \n", reader_counter + writer_counter);
-        for (int i=0; i<x; i++)    // reading global variable x times 
+        
+	for (int i=0; i<x; i++)    // reading global variable x times 
             printf("Reader Thread %d Readed xyz (global variable) is %d\n", thread_no, xyz);  
             printf("global variable struct var readed { %s, %d }\n", global_var.str, global_var.num);
         printf("-----------------------------------------\n");
 
     pthread_mutex_lock( &mutex);
         reader_counter--;
-        if (reader_counter==0){
+        if (reader_counter==0)
+	{
             pthread_mutex_unlock( &writer_mutex);
             // pthread_cond_signal(&writer_cond);
         }
@@ -67,14 +69,14 @@ void *read_func(void *args)
 void *write_func(void *args)
 {
     int thread_no = *(int*)args;
-    sleep(rand()%5);
-       pthread_mutex_lock(&writer_mutex);
+    sleep( rand()%5);
+       pthread_mutex_lock( &writer_mutex);
         // pthread_cond_wait(&writer_cond, &mutex);
         writer_counter++;
-        for(int i=0;i<x;i++)
+        for (int i=0; i<x; i++)
             xyz++;     // updateing global variable (shered var) x time ;
 
-        strcpy(global_var.str, string[ thread_no ]);
+        strcpy( global_var.str, string[ thread_no ]);
         global_var.num = thread_no;
         printf("Writer Thread Number : %d\n", thread_no);
         printf("Number of Thread in Critical Section (includeing self) : %d \n", reader_counter + writer_counter);
