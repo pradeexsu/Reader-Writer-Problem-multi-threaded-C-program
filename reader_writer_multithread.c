@@ -30,8 +30,8 @@ int writer_counter = 0;
 struct var global_var = {"default", 50};
 
 int xyz = 10;    // another global variable
-int a[5]={1,2,3,4,5};
-char string[][10] = {"","one","two","three","four","five"};
+int a[5] = {1, 2, 3, 4, 5};
+char string[][10] = {"", "one","two","three","four","five"};
 
 void *read_func(void *args){
 
