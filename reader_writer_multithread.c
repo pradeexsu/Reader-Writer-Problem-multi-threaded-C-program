@@ -33,7 +33,8 @@ int xyz = 10;    // another global variable
 int a[5] = {1, 2, 3, 4, 5};
 char string[][10] = {"", "one", "two", "three", "four", "five"};
 
-void *read_func(void *args){
+void *read_func(void *args)
+{
 
     int thread_no = *(int*)args;
     pthread_mutex_lock(&mutex);
