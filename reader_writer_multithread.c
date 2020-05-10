@@ -103,7 +103,6 @@ int main()
     {
         pthread_create(&reader[i], NULL,read_func,  (void *)&a[i]);
         pthread_setschedprio( reader[i], 1);
-        
         /**
          * after the creation I set priority of respective ith reader thread is to 0;
          * using pthread_setschedprio(pthread_t thread, int priority_no);
@@ -130,7 +129,7 @@ int main()
     }
 
 
-    for (int i = 0; i < 5; i++) 
+    for (int i=0; i<5; i++) 
     {
         pthread_join(writer[i], NULL);
     }
