@@ -99,7 +99,8 @@ int main()
     pthread_mutex_init( &writer_mutex, NULL);
     pthread_cond_init( &writer_cond, NULL);
     
-    for (int i = 0; i < 5; i++) {
+    for (int i=0; i<5; i++) 
+    {
         pthread_create(&reader[i], NULL,read_func,  (void *)&a[i]);
         pthread_setschedprio( reader[i], 1);
         
