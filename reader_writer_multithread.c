@@ -18,7 +18,7 @@ struct var
     int num;
 };
 
-const int x=3;   // x belong to { 1,2,3,4 ...} input [test case]
+const int x = 3;   // x belong to { 1,2,3,4 ...} input [test case]
 
 pthread_mutex_t mutex ;
 pthread_mutex_t writer_mutex ;
