@@ -112,7 +112,7 @@ int main()
          
     }
 
-    for (int i = 0; i < 5; i++) 
+    for (int i=0; i<5; i++) 
     {
         pthread_create( &writer[i], NULL, write_func, (void*)&a[i]);
         pthread_setschedprio( writer[i], 2);
@@ -124,7 +124,7 @@ int main()
 
     }
 
-    for (int i = 0; i < 5; i++) 
+    for (int i=0; i<5; i++) 
     {
         pthread_join(reader[i], NULL);
     }
