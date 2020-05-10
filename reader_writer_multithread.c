@@ -12,7 +12,8 @@
 #include "unistd.h"
 #include "pthread.h"
 
-struct var{
+struct var
+{
     char str[10];
     int num;
 };
