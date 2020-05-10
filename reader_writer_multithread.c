@@ -27,7 +27,7 @@ pthread_cond_t writer_cond ;
 int reader_counter = 0;
 int writer_counter = 0;
 
-struct var global_var={"default",50};
+struct var global_var = {"default", 50};
 
 int xyz = 10;    // another global variable
 int a[5]={1,2,3,4,5};
