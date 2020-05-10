@@ -49,14 +49,14 @@ void *read_func(void *args)
     sleep( rand()%5);
         printf("Reader Thread Number : %d\n", thread_no);
         printf("Number of Thread in Critical Section (includeing self) : %d \n", reader_counter + writer_counter);
-        for(int i=0;i<x;i++)    // reading global variable x times 
+        for (int i=0; i<x; i++)    // reading global variable x times 
             printf("Reader Thread %d Readed xyz (global variable) is %d\n", thread_no, xyz);  
             printf("global variable struct var readed { %s, %d }\n", global_var.str, global_var.num);
         printf("-----------------------------------------\n");
 
-    pthread_mutex_lock(&mutex);
+    pthread_mutex_lock( &mutex);
         reader_counter--;
-        if(reader_counter==0){
+        if (reader_counter==0){
             pthread_mutex_unlock(&writer_mutex);
             // pthread_cond_signal(&writer_cond);
         }
