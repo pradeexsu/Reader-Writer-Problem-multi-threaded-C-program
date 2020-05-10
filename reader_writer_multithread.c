@@ -37,15 +37,16 @@ void *read_func(void *args)
 {
 
     int thread_no = *(int*)args;
-    pthread_mutex_lock(&mutex);
+    pthread_mutex_lock( &mutex);
         reader_counter++;
-        if(reader_counter==1){
-            pthread_mutex_lock(&writer_mutex);
+        if (reader_counter==1)
+	{
+            pthread_mutex_lock( &writer_mutex);
             // pthread_cond_wait( &writer_cond, &mutex);
         }
         
-    pthread_mutex_unlock(&mutex);
-    sleep(rand()%5);
+    pthread_mutex_unlock( &mutex);
+    sleep( rand()%5);
         printf("Reader Thread Number : %d\n",thread_no);
         printf("Number of Thread in Critical Section (includeing self) : %d \n", reader_counter+writer_counter);
         for(int i=0;i<x;i++)    // reading global variable x times 
