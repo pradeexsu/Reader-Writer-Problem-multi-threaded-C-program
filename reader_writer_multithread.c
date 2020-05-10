@@ -90,15 +90,16 @@ void *write_func(void *args)
     // pthread_cond_signal(&writer_cond);
 }
 
-int main(){
+int main()
+{
     
     pthread_t reader[5], writer[5];
  
-    pthread_mutex_init(&mutex, NULL);
-    pthread_mutex_init(&writer_mutex, NULL);
-    pthread_cond_init(&writer_cond, NULL);
+    pthread_mutex_init( &mutex, NULL);
+    pthread_mutex_init( &writer_mutex, NULL);
+    pthread_cond_init( &writer_cond, NULL);
     
-    for(int i = 0; i < 5; i++) {
+    for (int i = 0; i < 5; i++) {
         pthread_create(&reader[i], NULL,read_func,  (void *)&a[i]);
         pthread_setschedprio( reader[i], 1);
         
@@ -111,7 +112,7 @@ int main(){
     }
 
     for(int i = 0; i < 5; i++) {
-        pthread_create(&writer[i], NULL, write_func, (void *)&a[i]);
+        pthread_create( &writer[i], NULL, write_func, (void*)&a[i]);
         pthread_setschedprio( writer[i], 2);
         /**
          * here I set priority of each writer to '5'
