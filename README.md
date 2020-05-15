@@ -1,16 +1,13 @@
 # Reader-Writer-Problem-multi-threaded-C-program
+![reader writer](/logo.png)
 
-Name           : Pradeep Suthar
+**Name           : Pradeep Suthar**
+**Student ID     : 11815262**
+**Email Address  : sutharp777@gmail.com**
+**Submitted To   : Dr. Baljit Singh Saini**
 
-Student ID     : 11815262
-
-Email Address  : sutharp777@gmail.com
-
-Submitted To   : Dr. Baljit Singh Saini
-
-
-Used concepts
-  pthreads, mutexes, and condition variables to synchronize access to the shared variable.
+**Used concepts**
+  _pthreads, mutexes, and condition variables to synchronize access to the shared variable._
 
 # Output :
 Note: following all images are part of single test case output with x = 3
