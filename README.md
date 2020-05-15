@@ -1,5 +1,5 @@
 # Reader-Writer-Problem-multi-threaded-C-program
-![reader writer](https://github.com/sutharp777/Reader-Writer-Problem-multi-threaded-C-program/blob/master/"boynbooks.png)
+![reader writer](https://github.com/sutharp777/Reader-Writer-Problem-multi-threaded-C-program/blob/master/boynbooks.png)
 
 **Name           : Pradeep Suthar**
 **Student ID     : 11815262**
