@@ -1,6 +1,6 @@
 # Reader-Writer-Problem-multi-threaded-C-program
 
-  ![reader writer](https://github.com/sutharp777/Reader-Writer-Problem-multi-threaded-C-program/blob/master/boynbooks.png)
+  ![Reader Writer](https://github.com/sutharp777/Reader-Writer-Problem-multi-threaded-C-program/blob/master/boynbooks.png)
 
 **Name           : Pradeep Suthar**
 
@@ -10,17 +10,26 @@
 
 **Submitted To   : Dr. Baljit Singh Saini**
 
+---
 **Used concepts**
 
   _pthreads, mutexes, and condition variables to synchronize access to the shared variable._
+  
+---
 
 # Output :
-Note: following all images are part of single test case output with x = 3
+
+#### Note:  ```following all images are part of single test case output with x = 3```
+
+---
+
 ![](https://github.com/sutharp777/Reader-Writer-Problem-multi-threaded-C-program/blob/master/output1.png)
 ![](https://github.com/sutharp777/Reader-Writer-Problem-multi-threaded-C-program/blob/master/output2.png)
 ![](https://github.com/sutharp777/Reader-Writer-Problem-multi-threaded-C-program/blob/master/output3.png)
 
 # Problem Description 
+
+ ---
 
 A multi-threaded C program that gives readers priority over writers concerning a shared (global) variable. Essentially, if any readers are waiting, then they have priority over writer threads  
 --writers can only write when there are no readers. This program should adhere to the following constraints:  
