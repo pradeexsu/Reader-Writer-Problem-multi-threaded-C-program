@@ -4,10 +4,6 @@
 
 **Name           : Pradeep Suthar**
 
-**Student ID     : 11815262**
-
-**Email Address  : sutharp777@gmail.com**
-
 **Submitted To   : Dr. Baljit Singh Saini**
 
 ---
